@@ -1,0 +1,55 @@
+
+.btn{
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border:none;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+
+    &-primary{
+        background-color: rgba(66, 66, 165, 0.776);
+        color:#fff;
+    }
+
+    &-danger{
+        background-color: red;
+        color: #fff;
+    }
+
+    &-success{
+        background-color: #4caf50;
+        color:#fff ;
+        font-size: 16px;
+
+    }
+
+    &-large{
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    &-xLarge{
+        width: 240px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    &-medium{
+        width: 140px;
+        height: 50px;
+        font-size: 18px;
+    }
+    
+    &-small{
+        width: 80px;
+        height: 40px;
+        font-size: 16px;
+    }
+}

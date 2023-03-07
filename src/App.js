@@ -1,14 +1,43 @@
-import Button from "./components/Buttonn.jsx";
+import Button from "./components/Button.jsx";
 import "./App.css";
-import  Button  from "bootstrap";
+import { useState } from "react";
 
 function App() {
-  return <div className="App">
-    <Button size={'small'}  disable={true} innerText={'disable'}/>
-    <Button size={'large'}  disable={false} innerText={'disable'}/>
-    <Button size={'large'}  disable={false} innerText={'disable'}/>
-    <Button size={'large'}  disable={false} innerText={'disable'}/>
-  </div>;
+  const [show, setShow] = useState(false);
+
+  return (
+    <div className="App">
+      <button  
+      onClick={() => setShow((show) => !show)}>
+        {show ? "Gizle" : "Göster"}
+      </button>
+      {show && (
+        <Button
+          size={"medium"}
+          disable={false}
+          innerText={"disable"}
+          color={"danger"}
+        />
+      )}
+      {show && (
+        <Button
+          size={"xLarge"}
+          disable={false}
+          innerText={"disable"}
+          color={"success"}
+        />
+      )}
+
+      {show && (
+        <Button
+          size={"large"}
+          disable={false}
+          innerText={"disable"}
+          color={"success"}
+        />
+      )}
+    </div>
+  );
 }
 
 export default App;

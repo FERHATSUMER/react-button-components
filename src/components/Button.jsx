@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Button } from "bootstrap";
-function Buttonn({
+import './style/button.css';
+
+
+function Button({
   size,
   color,
   disable,
@@ -23,12 +25,12 @@ function Buttonn({
   );
 }
 
-Button.defaultProps={
-    size:'small',
-    color:'',
-    disable:false,
-    innerText:'default'
-}
+Button.defaultProps = {
+  size: "small",
+  color: "",
+  disable: false,
+  innerText: "default",
+};
 
 Button.propTypes = {
   size: PropTypes.string,
@@ -40,4 +42,4 @@ Button.propTypes = {
   onMouseLeave: PropTypes.func,
 };
 
-export default Buttonn;
+export default Button;
