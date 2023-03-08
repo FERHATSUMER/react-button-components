@@ -3,3 +3,8 @@
     align-items: center;
     justify-content: center;
 }
+
+.show{
+  position: relative;
+    border: 2px solid red;
+}

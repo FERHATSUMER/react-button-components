@@ -1,42 +1,26 @@
-import Button from "./components/Button.jsx";
+import { Tabs } from "antd";
 import "./App.css";
-import { useState } from "react";
+import { Buttons, Interval } from "./pages";
+
 
 function App() {
-  const [show, setShow] = useState(false);
+  
+  const items= [
+    {
+      key: '1',
+      label: `Button`,
+      children: <Buttons/>,
+    },
+    {
+      key: '2',
+      label: `Interval`,
+      children: <Interval/>,
+    },
+    
 
+  ];
   return (
-    <div className="App">
-      <button  
-      onClick={() => setShow((show) => !show)}>
-        {show ? "Gizle" : "Göster"}
-      </button>
-      {show && (
-        <Button
-          size={"medium"}
-          disable={false}
-          innerText={"disable"}
-          color={"danger"}
-        />
-      )}
-      {show && (
-        <Button
-          size={"xLarge"}
-          disable={false}
-          innerText={"disable"}
-          color={"success"}
-        />
-      )}
-
-      {show && (
-        <Button
-          size={"large"}
-          disable={false}
-          innerText={"disable"}
-          color={"success"}
-        />
-      )}
-    </div>
+    <Tabs defaultActiveKey="1" items={items}  />
   );
 }
 
