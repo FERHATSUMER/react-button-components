@@ -1,0 +1,19 @@
+.timer{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    padding-top: 16.5rem;
+}
+
+.timer-container{
+    background-color: #fff;
+    width: 20vw;
+    padding: 16px 96px;
+    border-radius: 32px;
+    text-align: center;
+    box-shadow: 0 16px 16px 0.1rem rgba(0, 0, 0.5);
+}

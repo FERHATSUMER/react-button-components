@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../components/Button";
-import './style.scss';
+import "./style.scss";
 
 const Buttons = () => {
   const handleStartInterval = () => {
@@ -12,66 +12,62 @@ const Buttons = () => {
       <div>
         <Button
           onClick={handleStartInterval}
-          size={"xLarge"}
+          size="xLarge"
           disable={false}
           innerText="x-Large"
-          color={"success"}
+          color="success"
         />
         <Button
-          size={"large"}
+          size="large"
           disable={false}
           innerText="Large"
-          color={"success"}
+          color="success"
         />
         <Button
-          size={"small"}
+          size="medium"
+          disable={false}
+          innerText="medium"
+          color="success"
+        />
+        <Button
+          size="small"
           disable={false}
           innerText="small"
-          color={"success"}
+          color="success"
         />
       </div>
 
       <div>
         <Button
           onClick={handleStartInterval}
-          size={"xLarge"}
+          size="xLarge"
           disable={false}
           innerText="x-Large"
-          color={"danger"}
+          color="danger"
         />
-        <Button
-          size={"large"}
-          disable={false}
-          innerText="Large"
-          color={"danger"}
-        />
-        <Button
-          size={"small"}
-          disable={false}
-          innerText="small"
-          color={"danger"}
-        />
+        <Button size="large" disable={false} innerText="Large" color="danger" />
+        <Button size="small" disable={false} innerText="small" color="danger" />
       </div>
 
       <div>
         <Button
           onClick={handleStartInterval}
-          size={"xLarge"}
+          size="xLarge"
           disable={false}
           innerText="x-Large"
-          color={"primary"}
+          color="primary"
         />
         <Button
-          size={"large"}
+          size="large"
           disable={false}
           innerText="Large"
-          color={"primary"}
+          color="primary"
         />
         <Button
-          size={"small"}
+          size="small"
           disable={false}
           innerText="small"
-          color={"primary"}
+          color="primary"
         />
       </div>
     </div>
