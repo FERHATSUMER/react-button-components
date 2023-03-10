@@ -67,7 +67,7 @@ const Buttons = () => {
           size="small"
           disable={false}
           innerText="small"
-          color="primary"
+          color="dahed"
         />
       </div>
     </div>

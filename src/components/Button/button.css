@@ -23,6 +23,14 @@
   background-color: #4caf50;
   color: #fff;
 }
+.btn-dahed {
+  border-radius: 2px solid #ff4d4f;
+  color: #ff4d4f;
+}
+.btn-dahed:hover {
+  color: #4caf50;
+  border: 2px dashed #ff4d4f;
+}
 .btn-large {
   padding: 14px 22px;
   font-size: 20px;

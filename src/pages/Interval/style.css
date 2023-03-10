@@ -17,4 +17,8 @@
   border-radius: 32px;
   text-align: center;
   box-shadow: 0 16px 16px 0.1rem rgb(0, 0, 1);
+}
+
+.btn-container {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

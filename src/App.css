@@ -4,7 +4,12 @@
     justify-content: center;
 }
 
-.show{
-  position: relative;
-    border: 2px solid red;
+
+
+.logo{
+  width: 60px;
+  height: 45px;
+  border-radius: 50%;
+  position: absolute;
+  right:15px;
 }
